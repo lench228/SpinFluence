@@ -1,0 +1,349 @@
+@import url('/styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Inter:wght@400;600&family=Merriweather:wght@300&family=Playfair+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+/* Header */
+
+.container{
+    max-width: 1133px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Nav */
+.nav {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 233px;
+    align-items: center;
+
+}
+.nav__logo {
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+    gap: 53px;
+}
+.link:hover {
+    text-decoration-line: underline;
+    color: #1E47FF;
+}
+
+.list__item--active{
+    text-decoration-line: underline;
+    color: #1E47FF;
+}
+.log-in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* HERO */
+.hero_container{
+    margin: 0 auto;
+    max-width: 546px;
+    max-height: 287px;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero {
+    background-image: url('/img/header/background.jpg');
+    background-size: cover;
+    height: 614px;
+    display: flex;
+}
+.hero__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138.5%; /* 69.25px */
+}
+.hero__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 28.8px */
+}
+
+.hero__footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.hero__button {
+}
+.button {
+    display: inline-flex;
+    padding: 18px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 162px;
+
+    border-radius: 5px;
+    background: #1E47FF;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+}
+.hero__number {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+/* Word Press */
+
+.word-press {
+    color: #000;
+    display: grid;
+    gap: 27px;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-top: 140px;
+}
+
+.word-press__card {
+    max-width: 361px;
+    height: 352px;
+    border-radius: 10px;
+    border: 1px solid rgba(30, 71, 255, 0.37);
+
+    padding: 48px 37px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.word-press__card-img {
+}
+.word-press__card-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.word-press__card-title {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 138.5%; /* 38.78px */
+}
+.word-press__card-text {
+    color: #666;
+    font-family: Inter;
+
+    font-weight: 400;
+    line-height: 180%; /* 28.8px */
+}
+
+/* Visions */
+
+.vision {
+    
+    display: flex;
+    flex-direction: row;
+    
+    margin: 140px 203px;
+    margin-left: 245px;
+    gap: 106px;
+    
+}
+
+.vision__image{
+
+
+}
+
+.vision__visual{
+    display: inline-block;
+    background: url('/img/visions/red.jpg');
+    background-size: cover;
+
+    width: 426.839px;
+    height: 457.257px;
+
+}
+
+.vision__visual::after {
+    content: url('/img/visions/ofice.jpg');
+    display: block;
+    position: relative;
+    width: 236.478px;
+    height: 250.216px;
+    bottom: -200px;
+    right: -260px;
+}
+
+.vision__visual::before{
+    content: url('/img/visions/exp.png');
+
+    display: block;
+    position: relative;
+    width: 158.961px;
+    height: 78.499px;
+    top: -15px;
+    left: -42px;
+
+    background: #1E47FF;
+}
+
+
+
+.vision__content {
+
+}
+.content {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.content__title {
+    color: #1B3868;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    text-transform: uppercase;
+}
+.content__title2 {
+    color: #333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 133.333% */
+
+    padding-bottom: 15px;
+}
+.content__text {
+    color: #333;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+
+    padding-bottom: 11px;
+}
+.button {
+
+}
+
+
+/* Solutions */
+
+.solutions {
+
+}
+.solution__container {
+    margin: 125px 151px;
+}
+
+.solution__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    
+}
+
+.sulution__card{
+    position: relative;
+    max-width: 361px;
+    height: 523px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+.solution__cards-image {
+
+    max-width: 361px;
+    height: 314px;
+}
+.solution__cards-button {
+
+    filter: drop-shadow(0px 4px 18px rgba(30, 71, 255, 0.21));
+    position: absolute;
+
+    display: inline-flex;
+    padding: 18px 25px;
+    justify-content: center;
+    align-items: center;
+
+    left: 32px;
+    top: 274px;
+    max-width: 297px;
+    max-height: 80px;
+    background-color: #fff;
+    
+
+}
+.solution__cards-button-text {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 30px */
+}
+
+.solution__cards-text {
+    position: relative;
+    color: #6C6C6C;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 181.5%; /* 36.3px */
+}
+
+.solution__content{
+    margin: 77px auto;
+    max-width: 711px;
+}
